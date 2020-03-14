@@ -29,6 +29,7 @@ public class DogTester {
         System.out.println(dog2.toString());
         System.out.println("--------------------------");
 
+       //asking if they want to change the dog valuses
        
         change = JOptionPane.showInputDialog("would you like to change the values of the hunger and agrression of the first dog");
         change.toLowerCase();
@@ -60,7 +61,7 @@ public class DogTester {
         
         }
         
-        
+        //outPuting the new dog values
         System.out.println("your dogs values are");
         System.out.println("--------------------------");
         
@@ -70,6 +71,7 @@ public class DogTester {
         System.out.println(dog2.toString());
         System.out.println("--------------------------");
 
+        //saying wether the two dogs meeting will be frendly or not
         if(dog1.getAggression()>5 ||dog2.getAggression()>5 ){
             System.out.println("the dogs will have a unfrendly meeting because they have two much aggression");
         }
@@ -77,11 +79,15 @@ public class DogTester {
         if(dog1.getHunger()<5 ||dog2.getHunger()<5 ){
             System.out.println("the dogs will have a unfrendly meeting because they are two hungry");
         }
+        
+    //asking if they want to run the simulation again
     again = JOptionPane.showInputDialog("would you like to creat two new dogs?");
     again.toLowerCase();
+   //ends the loop if they don't want to run it again
     if(again.equals("no")){
         x++;
     }
+    //the end of the loop
         }while(x==0);
     }
     private static int setAggression() {
